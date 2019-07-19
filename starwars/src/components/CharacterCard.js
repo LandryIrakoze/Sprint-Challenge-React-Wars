@@ -1,12 +1,10 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-import Data from './Data';
-import { Container, Card } from './Styles';
+import { Card, Name } from './Styles';
 
 function CharacterCard(props) {
     return (
         <Card>
-            <p>{props.info.name}</p>
+            <Name>{props.info.name}</Name>
             <p>birth year: {props.info.birth_year}</p>
             <p>mass: {props.info.mass}</p>
             <p>{props.info.hair_color}</p>

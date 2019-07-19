@@ -1,5 +1,6 @@
-import React from "react";
 import styled from 'styled-components';
+
+
 
 export const Container = styled.div`
     display: flex;
@@ -11,14 +12,15 @@ export const Container = styled.div`
 `
 
 export const Card = styled.div`
-    width: 100px;
-    height: 250px;
+    width: 150px;
+    height: 220px;
     padding: 20px;
     border: 2px solid black;
     border-radius: 5px;
     margin: 10px;
 
     background-color: brown;
+    box-shadow: 6px 6px black;
 `
 
 export const ButtonContainer = styled.div`
@@ -26,10 +28,10 @@ export const ButtonContainer = styled.div`
 `
 
 export const Button = styled.button`
-  background: transparent;
+  background: orange;
   border-radius: 3px;
-  border: 2px solid palevioletred;
-  color: palevioletred;
+  border: 2px solid black;
+  color: white;;
   margin: 0.5em 1em;
   padding: 0.25em 1em;
 

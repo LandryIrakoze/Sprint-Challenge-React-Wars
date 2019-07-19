@@ -41,8 +41,16 @@ function Data() {
     return (
         <>
         <ButtonContainer>
-            <Button id="next" onClick={() => getCharacter(next)} >Next</Button>
-            <Button id="previous" onClick={() => getCharacter(previous)} >previous</Button>
+            {
+                next
+                ? <Button id="next" onClick={() => getCharacter(next)} >Next</Button>
+                : <></>
+            }
+            {
+                previous
+                ? <Button id="previous" onClick={() => getCharacter(previous)} >previous</Button>
+                : <></>
+            }
         </ButtonContainer>
         <Container>
             {
